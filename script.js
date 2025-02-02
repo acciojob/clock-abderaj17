@@ -1,7 +1,8 @@
-//your JS code here. If required.
-const dateTimer = document.querySelector(".dateTimer");
+//your JS code here.  
 
-function displayDateTimer() {
- let date = new Date();
-	
-}
+
+setInterval(()=>{
+	let date = new Date();
+	document.querySelector("#timer").textContent = `${date}`;
+},1000)
+
